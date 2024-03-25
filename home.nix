@@ -5,6 +5,19 @@
     home.homeDirectory = "/home/msueberkrueb";
     home.stateVersion = "23.11";
 
+    programs.git = {
+        enable = true;
+        userEmail = "mike.sueberkrueb@freenet.ag";
+        userName = "msueberkrueb";
+
+        extraConfig = {
+            commit.gpgsign = true;
+            gpg.format = "ssh";
+            push.autoSetupRemote = true;
+            user.signingkey = "~/.ssh/id_ed25519.pub";
+        };
+    };
+
     programs.neovim = {
         enable = true;
 
