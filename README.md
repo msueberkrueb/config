@@ -10,6 +10,6 @@ nix (curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems
 
 Installing the config into the environment can be done with the following command:
 
-´´´
+```
 home-manager switch
-´´´
+```
