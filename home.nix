@@ -5,6 +5,19 @@
     home.homeDirectory = "/home/msueberkrueb";
     home.stateVersion = "23.11";
 
+    home.packages = with pkgs; [
+        actionlint
+        alejandra
+        biome
+        black
+        editorconfig-checker
+        hadolint
+        mypy
+        statix
+        stylua
+        python311Packages.cfn-lint
+    ];
+
     programs.git = {
         enable = true;
         userEmail = "mike.sueberkrueb@freenet.ag";
@@ -42,9 +55,9 @@
                 config = builtins.readFile ./nvim/plugins/harpoon.lua;
             }
             {
-                plugin = nvim-lspconfig;
+                plugin = none-ls-nvim;
                 type = "lua";
-                config = builtins.readFile ./nvim/plugins/lsp.lua;
+                config = builtins.readFile ./nvim/plugins/none-ls.lua;
             }
             {
                 plugin = telescope-nvim;
