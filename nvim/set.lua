@@ -1,28 +1,13 @@
-vim.opt.relativenumber = true
-
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-
-vim.opt.smartindent = true
-
-vim.opt.wrap = false
-
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-vim.opt.undofile = true
-
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
-
-vim.opt.termguicolors = true
-
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
-
-vim.opt.updatetime = 50
-
-vim.opt.colorcolumn = "80"
+vim.opt.autoindent = true -- Automatically indent new lines to level of previous line
+vim.opt.expandtab = true -- Automatically change <TAB> to configured amount of spaces
+vim.opt.hlsearch = false -- Disable highlights after searching for a term
+vim.opt.incsearch = true -- Enable incremental search results
+vim.opt.mouse = "" -- List of modes that should support mouse actions
+vim.opt.relativenumber = true -- Sets the line numbers relative to the current line
+vim.opt.scrolloff = 12 -- Set the amount of lines that should always be visible above and below the cursor
+vim.opt.shiftwidth = 0 -- Set the number of spaces that should be used when auto-indenting
+vim.opt.smartindent = true -- Enable auto indentation for nested blocks like conditions and loops
+vim.opt.swapfile = false -- Disable saving buffers into files
+vim.opt.termguicolors = true -- Enable 24-bit RGB color support
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir" -- Configuration where undo files should be saved
+vim.opt.undofile = true -- Enable undo backup files
