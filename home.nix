@@ -45,14 +45,14 @@
                 config = builtins.readFile ./nvim/plugins/catppuccin.lua;
             }
             {
-                plugin = vim-fugitive;
-                type = "lua";
-                config = builtins.readFile ./nvim/plugins/fugitive.lua;
-            }
-            {
                 plugin = harpoon;
                 type = "lua";
                 config = builtins.readFile ./nvim/plugins/harpoon.lua;
+            }
+            {
+                plugin = lsp_lines-nvim;
+                type = "lua";
+                config = builtins.readFile ./nvim/plugins/lsp-lines.lua;
             }
             {
                 plugin = none-ls-nvim;
@@ -60,19 +60,24 @@
                 config = builtins.readFile ./nvim/plugins/none-ls.lua;
             }
             {
-                plugin = telescope-nvim;
-                type = "lua";
-                config = builtins.readFile ./nvim/plugins/telescope.lua;
-            }
-            {
                 plugin = nvim-treesitter;
                 type = "lua";
                 config = builtins.readFile ./nvim/plugins/treesitter.lua;
             }
             {
+                plugin = telescope-nvim;
+                type = "lua";
+                config = builtins.readFile ./nvim/plugins/telescope.lua;
+            }
+            {
                 plugin = undotree;
                 type = "lua";
                 config = builtins.readFile ./nvim/plugins/undotree.lua;
+            }
+            {
+                plugin = vim-fugitive;
+                type = "lua";
+                config = builtins.readFile ./nvim/plugins/fugitive.lua;
             }
         ];
 
