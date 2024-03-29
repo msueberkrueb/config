@@ -1,8 +1,3 @@
-# Requirements
-
-To use home-manager you need to install the nix cli:
-
-
 # Installation
 
 ## WSL
@@ -44,5 +39,13 @@ The initial installation of this configuration can be done with the following co
 
 ```
 git clone git@github.com:msueberkrueb/config.git ~/.config/home-manager &&
+nix run home-manager/release-23.11 switch
+```
+
+Updating an already present configuration is done via another command:
+
+```
+cd ~/.config/home-manager &&
+git pull &&
 nix run home-manager/release-23.11 switch
 ```
