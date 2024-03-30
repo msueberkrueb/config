@@ -49,3 +49,22 @@ cd ~/.config/home-manager &&
 git pull &&
 nix run home-manager/release-23.11 switch
 ```
+
+## Font
+
+The configured font is provided in this repository:
+```
+MesloLGMDZNerdFontMono-Regular.ttf
+```
+
+## Theme
+
+The catppuccin theme is not only used for tmux and neovim, but also for the following applications:
+
+- https://github.com/catppuccin/aseprite
+- https://github.com/catppuccin/chrome
+- https://github.com/catppuccin/home-assistant
+- https://github.com/catppuccin/godot
+- https://github.com/catppuccin/obsidian
+- https://github.com/catppuccin/userstyles/tree/main/styles/hoppscotch
+- https://github.com/catppuccin/vimium
