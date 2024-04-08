@@ -27,9 +27,11 @@
 
             extraConfig = {
                 commit.gpgsign = true;
+                core.sshCommand = "ssh.exe";
                 gpg.format = "ssh";
+                gpg.ssh.program = "/mnt/c/Users/msueberkrueb/AppData/Local/1Password/app/8/op-ssh-sign-wsl";
                 push.autoSetupRemote = true;
-                user.signingkey = "~/.ssh/id_ed25519.pub";
+                user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP0RJSHaad8vStxJQ1n4pXNs1a2glcA6lM2DKYubRbEa";
             };
         };
 

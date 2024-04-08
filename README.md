@@ -14,16 +14,7 @@ Then the JSON Config should be replaced with the windows-terminal.config.json.
 
 ## SSH-Key
 
-To install this config an ssh-key should be configured:
-
-```
-ssh-keygen -t ed25519 -C "your_email@example.com" &&
-eval "$(ssh-agent -s)" &&
-ssh-add ~/.ssh/id_ed25519 &&
-cat ~/.ssh/id_ed25519.pub
-```
-
-The content of the public key must be set as an authorization and as an signing key in the github settings.
+The SSH-Key setup runs via 1Passwords SSH Integration. Therefore 1Password has to be installed and the [1Password SSH-Agent](https://developer.1password.com/docs/ssh/get-started/#turn-on-the-ssh-agent-in-1password) needs to be configured.
 
 ## Nix
 
