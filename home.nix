@@ -20,6 +20,17 @@
     };
 
     programs = {
+        bash = {
+            enable = true;
+            bashrcExtra = ''
+                PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$'
+            '';
+            shellAliases = {
+                ssh = "ssh.exe";
+                ssh-add = "ssh-add.exe";
+            };
+        };
+
         git = {
             enable = true;
             userEmail = "mike.sueberkrueb@freenet.ag";
