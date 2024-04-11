@@ -67,6 +67,7 @@
                 "source": "Windows.Terminal.Wsl"
             },
             {
+                "bellStyle": "taskbar",
                 "colorScheme": "Catppuccin Mocha",
                 "font": 
                 {
