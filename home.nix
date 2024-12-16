@@ -33,7 +33,7 @@
 
         git = {
             enable = true;
-            userEmail = "mike.sueberkrueb@freenet.ag";
+            userEmail = "88376203+msueberkrueb@users.noreply.github.com";
             userName = "msueberkrueb";
 
             extraConfig = {
