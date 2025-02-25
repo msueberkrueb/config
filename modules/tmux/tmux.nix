@@ -5,6 +5,7 @@
     clock24 = true;
     customPaneNavigationAndResize = true;
     keyMode = "vi";
+    mouse = true;
     shortcut = "Space";
     terminal = "screen-256color";
 
