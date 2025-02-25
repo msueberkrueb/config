@@ -19,6 +19,6 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 ### Home-Manager Setup
 
 ```bash
-git clone git@github.com:msueberkrueb/config.git ~/.config/home-manager &&
-nix run home-manager/master -- --switch
+git clone https://github.com/msueberkrueb/config.git ~/.config/home-manager &&
+nix run home-manager/master switch
 ```
