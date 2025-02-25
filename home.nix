@@ -10,6 +10,7 @@
     ./modules/neovim/neovim.nix
     ./modules/packages/packages.nix
     ./modules/tmux/tmux.nix
+    ./modules/zsh/zsh.nix
   ];
 
   programs.home-manager.enable = true;
