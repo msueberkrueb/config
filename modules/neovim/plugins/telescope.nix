@@ -9,7 +9,7 @@
           desc = "Telescope Git Files";
         };
       };
-      "<leader>fg" = {
+      "<leader>g" = {
         action = "live_grep";
         options = {
           desc = "Telescope Live Grep";
