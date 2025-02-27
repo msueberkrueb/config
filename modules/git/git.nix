@@ -8,6 +8,7 @@
       core.sshCommand = "ssh.exe";
       gpg.format = "ssh";
       gpg.ssh.program = "/mnt/c/Users/msueberkrueb/AppData/Local/1Password/app/8/op-ssh-sign-wsl";
+      init.defaultBranch = "main";
 
       pull.rebase = true;
       push.autoSetupRemote = true;
