@@ -10,6 +10,7 @@
     ./modules/git/git.nix
     ./modules/neovim/neovim.nix
     ./modules/packages/packages.nix
+    ./modules/session-variables/session-variables.nix
     ./modules/tmux/tmux.nix
     ./modules/zsh/zsh.nix
   ];

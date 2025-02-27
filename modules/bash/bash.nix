@@ -2,7 +2,7 @@
   programs.bash = {
     enable = true;
     bashrcExtra = ''
-      tmux
+      tmux attach -t work || tmux new -s work
     '';
   };
 }
