@@ -19,6 +19,7 @@
     imports = [
       ./colorscheme.nix
       ./keymaps.nix
+      ./plugins/blink-cmp.nix
       ./plugins/conform.nix
       ./plugins/lsp.nix
       ./plugins/telescope.nix
