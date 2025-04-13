@@ -5,7 +5,6 @@
   home.stateVersion = "24.11";
 
   imports = [
-    ./modules/aliases/aliases.nix
     ./modules/bash/bash.nix
     ./modules/dotfiles/dotfiles.nix
     ./modules/git/git.nix

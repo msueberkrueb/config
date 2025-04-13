@@ -7,6 +7,9 @@
     history.expireDuplicatesFirst = true;
     initExtra = ''
       bindkey '^I' autosuggest-accept
+
+      ${builtins.readFile ./aliases.sh}
+      ${builtins.readFile ./environment.sh}
     '';
 
     oh-my-zsh = {
