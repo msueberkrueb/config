@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  pkgs-kubectl,
+  ...
+}: {
   home.packages = with pkgs; [
     alejandra
     awscli2
@@ -6,7 +10,6 @@
     dotnet-sdk
     ilspycmd
     jq
-    kubectl
     kubelogin-oidc
     nettools
     nodejs_22
@@ -14,5 +17,7 @@
     ripgrep
     traceroute
     xdg-utils
+
+    pkgs-kubectl.kubectl
   ];
 }

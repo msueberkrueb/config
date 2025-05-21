@@ -103,6 +103,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-kubectl": {
+      "locked": {
+        "lastModified": 1665808198,
+        "narHash": "sha256-SEa3F+dnP4VVDLsc996QQNrze8QplGNJE1dCR4VizTk=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "9d86c39f7ae97eba68b3e7e00b5706fc476c5443",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "9d86c39f7ae97eba68b3e7e00b5706fc476c5443",
+        "type": "github"
+      }
+    },
     "nixvim": {
       "inputs": {
         "flake-parts": "flake-parts",
@@ -152,6 +168,7 @@
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
+        "nixpkgs-kubectl": "nixpkgs-kubectl",
         "nixvim": "nixvim"
       }
     },
