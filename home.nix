@@ -1,4 +1,4 @@
-{...}: {
+{lib, ...}: {
   home.username = "msueberkrueb";
   home.homeDirectory = "/home/msueberkrueb";
 
@@ -14,6 +14,14 @@
     ./modules/tmux/tmux.nix
     ./modules/zsh/zsh.nix
   ];
+
+  home.activation = {
+    resetEnvironment = lib.hm.dag.entryAfter ["writeBondary"] ''
+      if [ -f ~/.env ]; then
+        rm ~/.env
+      fi
+    '';
+  };
 
   programs.home-manager.enable = true;
 }
