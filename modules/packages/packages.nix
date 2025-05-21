@@ -5,6 +5,7 @@
     dig
     dotnet-sdk
     ilspycmd
+    jq
     kubectl
     kubelogin-oidc
     nettools
