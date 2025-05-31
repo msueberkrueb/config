@@ -9,6 +9,7 @@
     dig
     dotnet-sdk
     ilspycmd
+    iptables
     jq
     kubelogin-oidc
     nettools
