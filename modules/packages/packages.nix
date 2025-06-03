@@ -6,6 +6,7 @@
   home.packages = with pkgs; [
     alejandra
     awscli2
+    deno
     dig
     dotnet-sdk
     ilspycmd
