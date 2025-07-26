@@ -17,6 +17,7 @@
     nodejs_22
     prettierd
     ripgrep
+    sops
     traceroute
     xdg-utils
 
