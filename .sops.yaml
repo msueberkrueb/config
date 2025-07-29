@@ -1,0 +1,7 @@
+keys:
+  - &primary age10f8u8z4e8eye56x372cl2qxe0yulpgem6lr4uz5dy04r5dpq4y0qanufhl
+creation_rules:
+  - path_regex: modules/dotfiles/.kube/config
+    key_groups:
+      - age:
+          - *primary

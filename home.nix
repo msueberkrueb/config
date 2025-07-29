@@ -1,4 +1,8 @@
-{lib, ...}: {
+{
+  lib,
+  sops-nix,
+  ...
+}: {
   home.username = "msueberkrueb";
   home.homeDirectory = "/home/msueberkrueb";
 
@@ -11,6 +15,7 @@
     ./modules/neovim/neovim.nix
     ./modules/packages/packages.nix
     ./modules/session-variables/session-variables.nix
+    ./modules/sops/sops.nix
     ./modules/tmux/tmux.nix
     ./modules/zsh/zsh.nix
   ];
@@ -23,5 +28,6 @@
     '';
   };
 
+  programs.ssh.enable = true;
   programs.home-manager.enable = true;
 }

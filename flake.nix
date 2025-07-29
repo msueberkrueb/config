@@ -8,6 +8,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    sops-nix = {
+      url = "github:mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,6 +22,7 @@
     nixpkgs,
     nixpkgs-kubectl,
     home-manager,
+    sops-nix,
     nixvim,
     ...
   }: let
@@ -36,6 +41,7 @@
       };
 
       modules = [
+        sops-nix.homeManagerModules.sops
         nixvim.homeManagerModules.nixvim
         ./home.nix
       ];
