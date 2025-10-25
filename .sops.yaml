@@ -1,0 +1,7 @@
+keys:
+  - &msueberkrueb ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP0RJSHaad8vStxJQ1n4pXNs1a2glcA6lM2DKYubRbEa
+creation_rules:
+  - path_regex: secrets/.*$
+    key_groups:
+      - age:
+          - *msueberkrueb
