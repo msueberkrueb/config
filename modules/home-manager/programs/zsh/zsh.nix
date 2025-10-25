@@ -26,6 +26,16 @@ in {
 
         { eval `ssh-agent`; ssh-add ~/.ssh/id_ed25519; } &>/dev/null
       '';
+
+      oh-my-zsh = {
+        enable = true;
+        plugins = [
+          "bun"
+          "git"
+          "gh"
+          "kubectl"
+        ];
+      };
     };
   };
 }
